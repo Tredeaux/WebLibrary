@@ -1,0 +1,16 @@
+#---------------------------------------------------
+#                       Set 404 Page
+#---------------------------------------------------
+
+RewriteEngine on
+ErrorDocument 404 /notfound.html
+
+#---------------------------------------------------
+#                   Make HTTPS default
+#---------------------------------------------------
+
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://example/$1 [R,L]
+
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://example/$1 [R,L]
